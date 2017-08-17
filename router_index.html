@@ -1,0 +1,164 @@
+<style type="text/css">
+body{
+    font-family:Arial, sans-serief;
+    background-color:#E5E5E5;
+    margin:0px;
+    padding:0px;
+}
+div.staticBox
+{
+    display: block;
+    position:relative;
+    margin-top:10%; 
+    text-align:center;
+}
+.noteDiv{
+    color:gray;
+    font-family:Arial;
+    width:395px;
+    text-align:left;
+    margin:0px auto;
+    font-size:14px;
+}
+#note{
+    display:inline-block;
+    vertical-align:top;
+    _display:inline;
+    _zoom:1;
+    width:50px;
+    font-weight:bold;
+}
+#tip{
+    display:inline-block;
+    vertical-align:top;
+    _display:inline;
+    _zoom:1;
+    width:340px;
+    font-weight:bold;
+}
+div.panelThre{
+    margin-top:10px;
+}
+div.picDiv{
+    width:395px;
+    height:276px;
+    background:url(static/loginbg.png);
+    position:relative;
+}
+input.pcPassword{
+    width:300px;
+    height:50px;
+    line-height:50px;
+    padding-left:20px;
+}
+div.PCBtnDiv{
+    position:relative;
+    margin-top:20px;
+}
+img.logoPic{
+    width:100%;
+}
+#copyright{
+    -webkit-text-size-adjust:none;
+    font-size:8px;
+    color:#6a6969;
+    font-family:"Verdana";
+    font-weight:normal;
+    margin-top:40px;
+    display:inline-block;
+}
+.topLogo{
+    background:url(static/top_bg.jpg);
+    height:90px;
+}
+.style1 {
+    font-family: "Arial";
+    color: #FFFFFF;
+    font-size: 16px;
+    padding-right: 50;
+    text-align: right;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.style2 {
+    font-size: 12px;
+    font-family: "Arial";
+    font-weight: bold;
+    padding-right: 50;
+    text-align: right;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+ul{
+    padding:60px 0px 0px 0px;
+    margin:0px;
+    list-style:none;
+}
+ul li{
+    height:34px;
+    width:222px;
+}
+li.unLi{
+    background:url(static/loginUser.png);
+}
+li.pwLi{
+    background:url(static/loginPwd.png);
+}
+li.blank{
+    height:15px;
+}
+input.text{
+    border:0px;
+    height:26px;
+    line-height:26px;
+    width:175px;
+    padding:0px;
+    margin:4px 0px 0px 40px;
+    font-size:14px;
+    color:#6a6969;
+    font-family:"Verdana","Arial";
+    font-weight:normal;
+}
+label.staticBtn{
+    height:34px;
+    display:inline-block;
+    width:113px;
+    margin-top:30px;
+    background:url(static/loginBtn.png);
+    cursor:pointer;
+}
+</style>
+
+
+<body onkeypress="PCWin(event)" onload="pageLoad()">
+    <div class="topLogo">
+        <table cellpadding=0 cellspacing=0 width="100%">
+            <tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr><td><a href="http://www.tp-link.com" target="blank" ><img src="static/top1_1.jpg" border="0" style="cursor:pointer"></a></td>
+                <td width="490" align=right background="static/top1_2.jpg" style="padding-top:23">
+                    <table>
+                        <tr><td class="style1">150M Wireless N Router</td></tr>
+                        <tr><td class="style2">Model No. TL-WR740N/TL-WR741ND </td></tr>
+                    </table>
+                </td>
+            </tr>
+            </table></td></tr>
+        <tr><td><IMG height=3 src="static/top2.jpg" width="100%" align=top border=0></td></tr>
+        </table>
+    </div>
+    <div class="staticBox">  
+        <div class="noteDiv">
+            <span id="note"></span>
+            <span id="tip"></span>
+        </div>
+        <div class="panelThre" align="center">
+            <div align="left" class="picDiv">
+                {html}
+            </div>
+        </div>
+    </div>
+    <form action="/userRpm/LoginRpm.htm" method="get" id="staticForm" enctype="multipart/form-data">
+        <input type="hidden" value="Save" name="Save" />
+    </form>
+</body>
+
