@@ -9,7 +9,7 @@ div.staticBox
 {
     display: block;
     position:relative;
-    margin-top:10%; 
+    margin-top:10%;
     text-align:center;
 }
 .noteDiv{
@@ -146,14 +146,15 @@ label.staticBtn{
         <tr><td><IMG height=3 src="static/top2.jpg" width="100%" align=top border=0></td></tr>
         </table>
     </div>
-    <div class="staticBox">  
+    <div class="staticBox">
         <div class="noteDiv">
             <span id="note"></span>
             <span id="tip"></span>
         </div>
         <div class="panelThre" align="center">
             <div align="left" class="picDiv">
-                {html}
+                {% block html %}
+                {% endblock %}
             </div>
         </div>
     </div>
