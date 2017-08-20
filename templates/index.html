@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block html %}
+<h1>Your Basic Router's Network Tools Page</h1>
+<h2>Hostname to IP address</h2>
+<form action="/hostname">
+    <p><input type="text" name="hostname">
+    <p><input type="submit" value="lookup!">
+</form>
+<h2>Ping IP address</h2>
+<form action="/ping">
+    <p><input type="text" name="ip">
+    <p><input type="submit" value="ping!">
+</form>
+{% endblock %}
