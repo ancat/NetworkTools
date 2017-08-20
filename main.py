@@ -12,7 +12,7 @@ def ping_ip(ip_address):
 @app.route('/hostname', methods=['GET'])
 def handle_hostname():
     hostname = request.args.get('hostname', None)
-    if hostname is None:
+    if not hostname:
         result = "No hostname provided."
     else:
         ip_address = hostname_lookup(hostname)
@@ -22,7 +22,7 @@ def handle_hostname():
 @app.route('/ping', methods=['GET'])
 def handle_ping():
     ip_address = request.args.get('ip', None)
-    if ip_address is None:
+    if not ip_address:
         result = "No IP address provided."
     else:
         ping_response = ping_ip(ip_address)
