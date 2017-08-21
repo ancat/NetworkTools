@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: networktools-omar
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: networktools-omar
+    spec: 
+      containers:
+      - name: networktools-omar
+        image: index.docker.io/ancat/networktools:1.0
+        ports:
+          - containerPort: 5000
+
